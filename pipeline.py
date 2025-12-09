@@ -1,10 +1,9 @@
 # pipeline.py - PowderyVision7 simplificado
 import os
 import time
-import cv2
 import numpy as np
 from ultralytics import YOLO
-from segment_mildew import segmentar_lesiones
+from PIL import Image
 
 CLS_MODEL_PATH = "models/yolo11m-cls_best.pt"
 SEG_MODEL_PATH = "models/yolo11n_leaf_seg_last.pt"
